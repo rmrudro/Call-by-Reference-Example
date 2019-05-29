@@ -1,0 +1,16 @@
+#include "pch.h"
+#include <iostream>
+using namespace std;
+void Increament(int *x);
+int main()
+{
+	int a = 10;
+	Increament(&a);
+	cout << "a is = " << a<< endl;
+	/*cout <<"Main Method A address = "<< &a << endl;*/
+
+}
+void Increament(int *x) {
+	*x = (*x) + 1;
+	
+}
